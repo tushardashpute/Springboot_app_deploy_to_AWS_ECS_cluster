@@ -60,7 +60,44 @@ Now Review and Create the task defination.
 
 <img width="1286" alt="image" src="https://user-images.githubusercontent.com/74225291/180640627-84a9a0f3-0060-45eb-8060-de14f8d1af67.png">
 
+4. Create Cluster
+
+Navigate in the left menu to the Clusters section and click the Create cluster button.
+
+<img width="901" alt="image" src="https://user-images.githubusercontent.com/74225291/180641189-effdaadb-497e-45f7-bb0f-f5264d70c0f4.png">
+
+<img width="880" alt="image" src="https://user-images.githubusercontent.com/74225291/180641220-1f012e38-b9c7-4ddc-a1ee-08275aa36826.png">
+
+Now click on create cluster.
+
+5. Create Service
+
+Time to tie everything together, so let’s create the Service in the AWS Fargate cluster in order to run the Docker image. Navigate to the cluster and click the Deploy button in the Services tab.
+
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/74225291/180643072-cc730896-c9f2-42c4-b770-766e9100c337.png">
+
+Time to tie everything together, so let’s create the Service in the AWS Fargate cluster in order to run the Docker image. Navigate to the cluster and click the Create button in the Services tab.
 
 <img width="983" alt="image" src="https://user-images.githubusercontent.com/74225291/180640567-54883c3c-bb31-4a66-870d-7a22f700893f.png">
+
+<img width="967" alt="image" src="https://user-images.githubusercontent.com/74225291/180643094-e3622369-3857-41be-9464-33e44057bb97.png">
+
+<img width="867" alt="image" src="https://user-images.githubusercontent.com/74225291/180643131-9b10493c-6e01-4b3a-b005-1395678e3a81.png">
+
+<img width="898" alt="image" src="https://user-images.githubusercontent.com/74225291/180643177-116364bf-19b2-45b3-b3c8-6b663317fc74.png">
+
+Click on Deploy.
+
+Once task is deploy you will see ALB is created. Goto LoadBalancer mand make sure to white list port 33333 in SG for ALB.
+
+<img width="1286" alt="image" src="https://user-images.githubusercontent.com/74225291/180643244-7006f0f0-1e1c-4a7c-88fb-f7a7570bfc78.png">
+
+<img width="1248" alt="image" src="https://user-images.githubusercontent.com/74225291/180643392-a9eaf7b1-a65d-4577-b87a-239fe502fa5a.png">
+
+<img width="1292" alt="image" src="https://user-images.githubusercontent.com/74225291/180643450-d3813c88-5bf7-4612-a6bc-aaacd04f4d9b.png">
+
+Now access the Sprinboot Application deployed on ECS Fargate using the ALB DNS as highlighted above.
+
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/74225291/180643492-e2d562cd-f720-44d4-9b4d-19c026473bd9.png">
 
 
